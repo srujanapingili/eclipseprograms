@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<bean id="srujana" class="com.logic.Second">
+		<property name="thirdA" ref="thirdone"></property>
+		<property name="thirdB" ref="thirdtwo"></property>
+	</bean>
+	<bean id="thirdone" class="com.logic.Third">
+		<property name="name" value="atlanta" />
+		<property name="a" value="20"></property>
+	</bean>
+	<bean id="thirdtwo" class="com.logic.Third">
+		<property name="name" value="duluth" />
+		<property name="a" value="50"></property>
+	</bean>
+</beans>
